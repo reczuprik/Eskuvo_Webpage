@@ -1,0 +1,52 @@
+/* Add a black background color to the top navigation */
+body {
+
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.header{
+  padding: 10px;
+}
+
+
+.nav-item{
+  margin-left:  5px;
+  margin-right: 5px;
+
+}
+.nav-link{
+  color: #1f1f14;
+
+}
+
+
+.esemeny_heading{
+  font-family: 'Sacramento', cursive;
+  font-size: 2rem;
+}
+.eventsSection{
+  padding-top: 20px;
+}
+.headingSection{
+  height: 10vh;
+}
+.homeSection{
+  height: 90vh;
+  background-position: center center;
+  background-image:url("../images/img_1.jpg") ;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 80%;
+}
+.title{
+    position: relative;
+    top: 5%;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: white;
+    opacity:100%;
+}
+.heading_Title{
+  font-size: 3rem;
+
+}
