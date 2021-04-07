@@ -27,11 +27,9 @@
   padding-left: 25%;
   padding-right: 25%;
   padding-top: 20px;
+  background-color: Red;
+}
 
-}
-.colored{
-  background-color: #FFFFE0;
-}
 .eventsSection{
   padding-left: 15%;
   padding-right: 15%;
