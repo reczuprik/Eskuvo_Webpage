@@ -1,5 +1,7 @@
 /* Add a black background color to the top navigation */
-
+p{
+  margin: 0;
+}
 .header{
   padding: 10px;
 }
@@ -21,14 +23,8 @@
 
   margin-top: 10px;
 }
-
-.rsvpSection{
-  margin-top: 10vh;
-  padding-left: 25%;
-  padding-right: 25%;
-  padding-top: 20px;
-  background-color: #CCD2E0;
-
+.esemenyek{
+  padding-bottom: 20px;
 }
 
 .eventsSection{
@@ -73,9 +69,20 @@
   margin-bottom: 0;
 }
 
+
+.rsvpSection{
+  margin-top: 10vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #CCD2E0;
+
+}
+
 .transparentInputBox{
 
-  background-color:transparent !important;
+  opacity: 20%;
   border: 0.5px solid #c0c0c0 ;
 
 
