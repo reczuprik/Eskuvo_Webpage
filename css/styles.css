@@ -1,13 +1,13 @@
 /* Add a black background color to the top navigation */
 body {
 
-  padding-left: 15%;
-  padding-right: 15%;
 }
 .header{
   padding: 10px;
 }
-
+p{
+  margin:0px;
+}
 
 .nav-item{
   margin-left:  5px;
@@ -23,12 +23,25 @@ body {
 .esemeny_heading{
   font-family: 'Sacramento', cursive;
   font-size: 2rem;
+
+  margin-top: 10px;
+}
+
+.rsvpSection{
+  margin-top: 10vh;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 20px;
+  background-color: yellow;
 }
 .eventsSection{
+  padding-left: 15%;
+  padding-right: 15%;
   padding-top: 20px;
 }
 .headingSection{
   height: 10vh;
+
 }
 .homeSection{
   height: 90vh;
@@ -37,6 +50,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   opacity: 80%;
+  padding: 0;
 }
 .title{
     position: relative;
@@ -49,4 +63,11 @@ body {
 .heading_Title{
   font-size: 3rem;
 
+}
+.utvonal{
+
+
+}
+.helyszin{
+  margin-bottom: 0px;
 }

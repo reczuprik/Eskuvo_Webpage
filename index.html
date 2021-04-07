@@ -10,12 +10,12 @@
   <title>Adri és Gergő</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=Sacramento&display=swap" rel="stylesheet">
-
+  <script src="https://kit.fontawesome.com/ff87b600c3.js" crossorigin="anonymous"></script>
 
 
 </head>
@@ -55,40 +55,94 @@
   <section class="eventsSection">
     <div class="bottom-container text-center">
       <div class="container">
+        <div>
+          <h1>Mikor, hol?</h1>
+        </div>
         <div class="row">
-          <div class="col esemenyek">
-            <i class="fas fa-glass-cheers"></i>
-            <div class="icon">
-              <img src="images/glasses.svg" alt="">
-            </div>
+
+          <div class="col-lg esemenyek">
+
+
             <div class="esemeny_heading">
+              <div class="icon">
+                <img src="images/glasses.svg" alt="">
+              </div>
               Érkezés
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis pulvinar.
-            </p>
-          </div>
-          <div class="col esemenyek">
-            <div class="icon">
-              <img src="images/temple.svg" alt="">
+            <div class="esemeny_time">
+              2021. augusztus 28. 15:00
             </div>
+            <div class="helyszin">
+              <p>
+                Helyszín:
+              </p>
+              <p>
+                Ludwig Hotel<br> Martonvásár<br>Emlékezés tere 5
+              </p>
+              <div>
+                <span style="font-size: 3em; color: Blue;">
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <a href="https://goo.gl/maps/yso3JDPrKKML7Nxf6" target="_blank">Útvonaltervezés</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg esemenyek">
+
+
             <div class="esemeny_heading">
+              <div class="icon">
+                <img src="images/temple.svg" alt="">
+              </div>
               Szertartás
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis pulvinar.
-            </p>
-          </div>
-          <div class="col esemenyek">
-            <div class="icon">
-              <img src="images/dance.svg" alt="">
+            <div class="esemeny_time">
+              2021. augusztus 28. 16:00
             </div>
+            <div class="">
+              <p>
+                Helyszín:
+              </p>
+              <p>
+                Szent Anna Templom<br>Martonvásár<br><br>
+              </p>
+              <div class="utvonal">
+                <span style="font-size: 3em; color: Blue;">
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <a href="https://goo.gl/maps/1jmvjHPYTxryrk9e9" target="_blank">Útvonaltervezés</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg esemenyek">
+
             <div class="esemeny_heading">
+              <div class="icon">
+                <img src="images/dance.svg" alt="">
+              </div>
               Lakodalom
             </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis pulvinar.
-            </p>
+            <div class="esemeny_time">
+              2021. augusztus 28. 18:00
+            </div>
+            <div class="">
+              <p>
+                Helyszín:
+              </p>
+              <p>
+                Ludwig Hotel<br> Martonvásár<br>Emlékezés tere 5
+              </p>
+              <span class="align-text-bottom">
+                <div class="utvonal">
+                  <span style="font-size: 3em; color: Blue;">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </span>
+                  <a href="https://goo.gl/maps/yso3JDPrKKML7Nxf6" target="_blank">Útvonaltervezés</a>
+                </div>
+              </span>
+            </div>
           </div>
 
         </div>
@@ -96,6 +150,27 @@
     </div>
   </section>
 
+
+
+  <section class="rsvpSection">
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+  </section>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
