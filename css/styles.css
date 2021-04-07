@@ -27,13 +27,15 @@
   padding-left: 25%;
   padding-right: 25%;
   padding-top: 20px;
-  background-color: Red;
+  background-color: #CCD2E0;
+
 }
 
 .eventsSection{
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 20px;
+  color:  #655F45;
 }
 .headingSection{
   height: 10vh;
@@ -64,6 +66,25 @@
 
 
 }
+.mapIcon{
+  font-size: 3em;
+}
 .helyszin{
   margin-bottom: 0;
+}
+
+.transparentInputBox{
+
+  background-color:transparent !important;
+  border: 0.5px solid #c0c0c0 ;
+
+
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #54647A;
+
 }
