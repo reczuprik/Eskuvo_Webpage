@@ -12,16 +12,18 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-app.get("/", function (req, res) {
-  res.render("home", {})
+app.get("/", function(req, res) {
+  res.render("index", {})
 });
-
-app.post("/", function(req, res) {
-  const itemName = req.body;
-
+app.post("/participant", function(req, res) {
+  console.log(req.body);
   res.redirect("/");
-});
+})
+app.post("/music", function(req, res) {
+  console.log(req.body.music);
+  res.redirect("/");
+})
 
-app.listen(port,()=>{
-    console.log(`Server is running on port: ${port}`);
+app.listen(port, () => {
+  console.log(`Server is running on port: ${port}`);
 })

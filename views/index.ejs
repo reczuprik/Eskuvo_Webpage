@@ -9,9 +9,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <title>Adri és Gergő</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" href="/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=Sacramento&display=swap" rel="stylesheet">
@@ -58,7 +58,7 @@
           <div class="col-lg esemenyek">
             <div class="esemeny_heading">
               <div class="icon">
-                <img src="images/glasses.svg" alt="">
+                <img src="/images/glasses.svg" alt="">
               </div>
               Érkezés
             </div>
@@ -86,7 +86,7 @@
 
             <div class="esemeny_heading">
               <div class="icon">
-                <img src="images/temple.svg" alt="">
+                <img src="/images/temple.svg" alt="">
               </div>
               Szertartás
             </div>
@@ -113,7 +113,7 @@
 
             <div class="esemeny_heading">
               <div class="icon">
-                <img src="images/dance.svg" alt="">
+                <img src="/images/dance.svg" alt="">
               </div>
               Lakodalom
             </div>
@@ -151,39 +151,39 @@
       <div class="rsvp_title">
         <h1 class="titleText">Számítunk rátok!</h1>
       </div>
-      <form>
+      <form class="" action="/participant" method="post">
         <div class="form-group">
           <div class="form-check form-check-inline">
-            <input class="form-check-input " type="radio" name="inlineRadioOptions" id="ottLesz" value="option1">
+            <input class="form-check-input " type="radio" name="there" id="ottLesz" value="bethere">
             <label class="form-check-label" for="inlineRadio1">Ott leszek</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="nemLeszOtt" value="option2">
+            <input class="form-check-input" type="radio" name="there" id="nemLeszOtt" name="there" value="notbethere">
             <label class="form-check-label" for="inlineRadio2">Nem tudok részt venni</label>
           </div>
         </div>
 
         <div class="form-group">
           <label for="nev">Neved</label>
-          <input type="text" class="form-control transparentInputBox" id="nev" placeholder="">
+          <input type="text" class="form-control transparentInputBox" id="nev" name="ParticipantName" placeholder="">
         </div>
         <div class="form-group">
           <label for="emailAddress" class="form-label">E-mail cím</label>
-          <input type="email" class="form-control transparentInputBox" id="emailAddress" aria-describedby="emailHelp">
+          <input type="email" class="form-control transparentInputBox" id="emailAddress" name="ParticipantEmail" aria-describedby="emailHelp">
         </div>
 
         <div class="form-group">
           <label for="kiserok">Kisérő és Családtagok nevei</label>
-          <textarea class="form-control input-sm transparentInputBox" aria-label="With textarea" id="kiserok"></textarea>
+          <textarea class="form-control input-sm transparentInputBox" aria-label="With textarea" name="ParticipantFollowers" id="kiserok"></textarea>
         </div>
 
         <div class="form-group">
           <div class="mb-3">
             <label for="megjegyzes">Üzenetek és megjegyzések</label>
-            <textarea class="form-control transparentInputBox " aria-label="With textarea" rows="5" id="megjegyzes"></textarea>
+            <textarea class="form-control transparentInputBox " aria-label="With textarea" rows="5" name="ParticipantNote" id="megjegyzes"></textarea>
           </div>
         </div>
-        <button type="submit" class="btn btn-outline-secondary">Küldés</button>
+        <button type="submit" name="resztvevoRequest" class="btn btn-outline-secondary">Küldés</button>
       </form>
     </div>
   </section>
@@ -192,14 +192,14 @@
     <div class="colored text-center">
       <h1 class="zenekeres_Title titleText">Zenekérés</h1>
       <h2 class="zenekeres_comment"></h2>
-      <form>
+      <form class="" action="/music" method="post">
         <div class="form-group">
           <div class="mb-3">
             <label for="formGroupExampleInput2">Írd meg kedvenc zeneszámaidat, amikre a lagzinkon szívesen táncolnál! 🙂</label>
-            <textarea class="form-control transparentInputBox" aria-label="With textarea" rows="5" id="zene"></textarea>
+            <textarea class="form-control transparentInputBox" aria-label="With textarea" rows="5" name="music"></textarea>
           </div>
         </div>
-        <button type="submit" class="btn btn-outline-secondary">Küldés</button>
+        <button type="submit" name="zeneRequest" class="btn btn-outline-secondary">Küldés</button>
       </form>
 
 
