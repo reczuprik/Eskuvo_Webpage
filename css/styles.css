@@ -98,7 +98,7 @@ a:active {
 @supports (-webkit-overflow-scrolling: touch) {
   .homeSection{
     background-attachment: scroll;
-    background-size: contain;
+    
     background-position:inherit;
   }
 
