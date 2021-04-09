@@ -1,7 +1,12 @@
 /* Add a black background color to the top navigation */
-p{
+html,body{
+  min-width:350px;
+  width: 100%;
+}
+p {
   margin: 0;
 }
+
 /* .header{
   padding: 10px;
 }
@@ -15,80 +20,82 @@ p{
   color: #1f1f14;
 
 } */
-
-
 /*Kezdőképx*/
-.homeSection{
+.homeSection {
+  position: relative;
   height: 90vh;
   background-position: center center;
-  background-image:url("../images/img_1.jpg") ;
+  background-image: url("../images/img_1.jpg");
   background-size: cover;
   background-attachment: fixed;
   opacity: 80%;
   padding: 0;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
 }
-.title{
-    position: relative;
-    top: 5%;
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
-    color: white;
-    opacity:100%;
-}
-.heading_Title{
 
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+.title {
+  position: absolute;
+  width: 100%;
+  top: 10%;
 
+  opacity: 100%;
+  text-shadow: 1px 1px black;
   font-size: 3rem;
 }
-/*#############################x*/
 
+.heading_Time {
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+
+}
+
+/*#############################x*/
 /*esemeny resz*/
-.esemeny_heading{
+.esemeny_heading {
   font-family: 'Sacramento', cursive;
   font-size: 2rem;
-
   margin-top: 10px;
 }
-.esemenyek{
+
+.esemenyek {
   padding-bottom: 20px;
 }
 
-.eventsSection{
+.eventsSection {
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 20px;
-  color:  #655F45;
+  color: #655F45;
 }
-.headingSection{
+
+.headingSection {
   height: 10vh;
-
 }
+
 /*#############################x*/
-
-
 /*mikor hol*/
-.rsvpSection{
+.rsvpSection {
   margin-top: 10vh;
   padding: 20px 15% 20px 15%;
   background-color: #CCD2E0;
-
 }
 
-.helyszin{
+.helyszin {
   margin-bottom: 0;
 }
 
-.mapIcon{
+.mapIcon {
   font-size: 3em;
 }
+
 /*#############################x*/
-
 /*Visszajelzés*/
-.transparentInputBox{
+.transparentInputBox {
   opacity: 70%;
-  border: 0.5px solid #c0c0c0 ;
-
+  border: 0.5px solid #c0c0c0;
 }
 
 a.linktoMaps:link,
@@ -96,11 +103,10 @@ a.linktoMaps:visited,
 a.linktoMaps:hover,
 a.linktoMaps:active {
   color: #54647A;
-
 }
 
- @supports ( -webkit-overflow-scrolling: touch) {
-  .homeSection{
+@supports (-webkit-overflow-scrolling: touch) {
+  .homeSection {
     height: 70vh;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -108,7 +114,8 @@ a.linktoMaps:active {
     padding: 0;
     margin: 0;
   }
-  .heading_Title{
+
+  .heading_Title {
     font-size: 2rem;
   }
 }
