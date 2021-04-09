@@ -3,6 +3,7 @@ html,body{
   min-width:350px;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
+  color: #59543d;
 }
 p {
   margin: 0;
@@ -66,7 +67,7 @@ h1{
 .eventsSection {
   padding: 40px 15% 40px 15%;
 
-  color: #655F45;
+
 }
 
 .esemeny_heading {
@@ -90,7 +91,7 @@ a.linktoMaps:link,
 a.linktoMaps:visited,
 a.linktoMaps:hover,
 a.linktoMaps:active {
-  color: #54647A;
+  color: #59543d;
 }
 
 /*#############################x*/
@@ -121,7 +122,7 @@ a.linktoMaps:active {
 }
 
 .transparentInputBox {
-  
+
   opacity: 70%;
   border: 0.5px solid #c0c0c0;
 }
@@ -147,3 +148,4 @@ a.linktoMaps:active {
   }
 }
 /*##############x*/
+     
