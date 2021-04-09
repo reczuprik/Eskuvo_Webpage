@@ -95,11 +95,18 @@ a:active {
   color: #54647A;
 
 }
-@supports (-webkit-overflow-scrolling: touch) {
+.white{
+
+
+    color: default;
+
+}
+@supports ( -webkit-overflow-scrolling: touch) {
   .homeSection{
     background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
     
-    background-position:inherit;
   }
 
 
