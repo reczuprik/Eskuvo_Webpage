@@ -100,6 +100,8 @@ a:active {
 @media (hover: none) {
    .homeSection {
        background-attachment: initial;
+       background-position: center center;
+       background-repeat: no-repeat;
        background-size: contain;
    }
 }
