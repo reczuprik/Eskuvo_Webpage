@@ -58,10 +58,6 @@ p{
   font-size: 3rem;
 
 }
-.utvonal{
-
-
-}
 .mapIcon{
   font-size: 3em;
 }
@@ -72,10 +68,7 @@ p{
 
 .rsvpSection{
   margin-top: 10vh;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 15% 20px 15%;
   background-color: #CCD2E0;
 
 }
@@ -95,19 +88,17 @@ a:active {
   color: #54647A;
 
 }
-.white{
 
-
-    color: default;
-
-}
-@supports ( -webkit-overflow-scrolling: touch) {
+/* @supports ( -webkit-overflow-scrolling: touch) {
   .homeSection{
     background-attachment: scroll;
     background-position: center center;
     background-repeat: no-repeat;
-    
   }
+} */
 
-
+@media (hover: none) {
+   .homeSection {
+       background-attachment: initial;
+   }
 }
