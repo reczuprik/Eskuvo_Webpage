@@ -37,7 +37,6 @@ p{
 }
 .heading_Title{
   font-size: 3rem;
-
 }
 /*#############################x*/
 
@@ -98,15 +97,20 @@ a.linktoMaps:active {
 
  @supports ( -webkit-overflow-scrolling: touch) {
   .homeSection{
-
+    height: auto;
     background-attachment: scroll;
 
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center center;
     padding: 0;
     margin: 0;
   }
   .title{
+
     color: red;
+  }
+  .heading_Title{
+    font-size: 2rem;
   }
 }
