@@ -98,11 +98,12 @@ a.linktoMaps:active {
 
  @supports ( -webkit-overflow-scrolling: touch) {
   .homeSection{
-    background-image: url("../images/IMG_2.JPG") ;
+
     background-attachment: scroll;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    color: red;
+    padding: 0;
+    margin: 0;
   }
 }
