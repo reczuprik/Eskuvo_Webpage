@@ -97,7 +97,7 @@ a.linktoMaps:active {
 
  @supports ( -webkit-overflow-scrolling: touch) {
   .homeSection{
-    height: auto;
+    width: 100%
     background-attachment: scroll;
 
     background-repeat: no-repeat;
