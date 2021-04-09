@@ -106,9 +106,10 @@ a.linktoMaps:active {
 
 @media (hover: none) {
    .homeSection {
-     height: auto;
+       height: auto;
+       background-image:url("../images/img_2.jpg") ;
        background-attachment: scroll;
-       background-position: center center;
+       background-position: center;
 
        background-size: 10vh;
 
