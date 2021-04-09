@@ -17,6 +17,29 @@ p{
 } */
 
 
+/*Kezdőképx*/
+.homeSection{
+  height: 90vh;
+  background-position: center center;
+  background-image:url("../images/img_1.jpg") ;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 80%;
+  padding: 0;
+}
+.title{
+    position: relative;
+    top: 5%;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: white;
+    opacity:100%;
+}
+.heading_Title{
+  font-size: 3rem;
+
+}
+/*#############################x*/
 
 /*esemeny resz*/
 .esemeny_heading{
@@ -41,29 +64,6 @@ p{
 }
 /*#############################x*/
 
-/*Kezdőképx*/
-.homeSection{
-  height: 90vh;
-  background-position: center center;
-  background-image:url("../images/img_1.jpg") ;
-  background-size: cover;
-  background-attachment: fixed;
-  opacity: 80%;
-  padding: 0;
-}
-.title{
-    position: relative;
-    top: 5%;
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
-    color: white;
-    opacity:100%;
-}
-.heading_Title{
-  font-size: 3rem;
-
-}
-/*#############################x*/
 
 /*mikor hol*/
 .rsvpSection{
@@ -100,10 +100,13 @@ a.linktoMaps:active {
   .homeSection{
 
     background-attachment: scroll;
-    background-position: center center;
+
     background-repeat: no-repeat;
     background-size: contain;
     padding: 0;
     margin: 0;
+  }
+  .title{
+    color: red;
   }
 }
