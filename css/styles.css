@@ -100,5 +100,6 @@ a:active {
 @media (hover: none) {
    .homeSection {
        background-attachment: initial;
+       background-size: contain;
    }
 }
