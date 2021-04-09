@@ -83,8 +83,9 @@ p{
 
 /*Visszajelzés*/
 .transparentInputBox{
-  opacity: 20%;
+  opacity: 70%;
   border: 0.5px solid #c0c0c0 ;
+
 }
 
 a.linktoMaps:link,
@@ -97,16 +98,12 @@ a.linktoMaps:active {
 
  @supports ( -webkit-overflow-scrolling: touch) {
   .homeSection{
-    height: 50vh;
+    height: 70vh;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     padding: 0;
     margin: 0;
-  }
-  .title{
-
-    color: red;
   }
   .heading_Title{
     font-size: 2rem;
