@@ -23,6 +23,10 @@ app.post("/music", function(req, res) {
   console.log(req.body.music);
   res.redirect("/");
 })
+app.get("/*", function(req, res) {
+  res.redirect("/");
+})
+
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
