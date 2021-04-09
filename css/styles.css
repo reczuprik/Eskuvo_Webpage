@@ -95,10 +95,11 @@ a:active {
   color: #54647A;
 
 }
-@@supports (-webkit-overflow-scrolling: touch) {
+@supports (-webkit-overflow-scrolling: touch) {
   .homeSection{
     background-attachment: scroll;
     background-size: contain;
+    background-position:inherit;
   }
 
 
