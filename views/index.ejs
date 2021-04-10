@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=Sacramento&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ff87b600c3.js" crossorigin="anonymous"></script>
-
+  <script src="/index.js"></script>
 
 </head>
 
@@ -46,6 +46,9 @@
 
 
   <section class="homeSection">
+    <div class="alert alert-success" role="alert" style="visibility:<%= visibility %>; height: <%= height %>;border: 0; padding: 50; margin:0">
+      <%= text%>
+    </div>
     <h1 class="title">Adri és Gergő </h1>
     <div class="heading_Time">2021. augusztus 28.</div>
   </section>
@@ -154,18 +157,18 @@
       <form class="" action="/participant" method="post">
         <div class="form-group">
           <div class="form-check form-check-inline">
-            <input class="form-check-input " type="radio" name="there" id="ottLesz" value="bethere">
+            <input class="form-check-input " type="radio" name="there" id="ottLesz" value="TRUE" required>
             <label class="form-check-label" for="inlineRadio1">Ott leszek</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="there" id="nemLeszOtt" name="there" value="notbethere">
+            <input class="form-check-input" type="radio" name="there" id="nemLeszOtt" name="there" value="FALSE" required>
             <label class="form-check-label" for="inlineRadio2">Nem tudok részt venni</label>
           </div>
         </div>
 
         <div class="form-group">
           <label for="nev">Neved</label>
-          <input type="text" class="form-control transparentInputBox" id="nev" name="ParticipantName" placeholder="">
+          <input type="text" class="form-control transparentInputBox" id="nev" name="ParticipantName" placeholder="" required>
         </div>
         <div class="form-group">
           <label for="emailAddress" class="form-label">E-mail cím(nem kötelező)</label>
@@ -184,7 +187,9 @@
           </div>
         </div>
         <button type="submit" name="resztvevoRequest" class="btn btn-outline-secondary">Küldés</button>
+
       </form>
+
     </div>
   </section>
 
@@ -200,14 +205,18 @@
           </div>
         </div>
         <button type="submit" name="zeneRequest" class="btn btn-outline-secondary">Küldés</button>
+
       </form>
 
 
     </div>
 
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
